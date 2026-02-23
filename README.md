@@ -14,7 +14,7 @@ This project analyzes global economic freedom using indicators such as unemploym
 - Regional differences highlight economic inequality.
 
 ## Dashboard Link
-Paste your Tableau Public link here.
+https://public.tableau.com/views/MeasuringthePulseofProsperityAnIndexofEconomicFreedomAnalysis_17717618704100/Story1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 ## Author
 Srikanth
