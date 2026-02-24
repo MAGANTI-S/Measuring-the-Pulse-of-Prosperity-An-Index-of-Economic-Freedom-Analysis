@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Economic Freedom Index Dashboard</title>
 
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 20px;
+            color: #2c3e50;
+        }
+
+        .dashboard-container {
+            width: 95%;
+            margin: auto;
+            max-width: 1100px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Economic Freedom Index Analysis Dashboard</h1>
+<p>Interactive visualization showing the impact of unemployment and economic indicators on national prosperity.</p>
+
+<div class="dashboard-container">
+    <div class='tableauPlaceholder' id='tableauViz'></div>
+</div>
+
+<script type='text/javascript'>
+    var divElement = document.getElementById('tableauViz');
+
+    var vizElement = document.createElement('object');
+    vizElement.className = 'tableauViz';
+    vizElement.style.width = '100%';
+    vizElement.style.height = '850px';
+
+    vizElement.innerHTML = `
+        <param name='host_url' value='https://public.tableau.com/' />
+        <param name='embed_code_version' value='3' />
+        <param name='name' value='EconomicFreedom/Dashboard1' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+    `;
+
+    divElement.appendChild(vizElement);
+
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+
+</body>
+</html>
