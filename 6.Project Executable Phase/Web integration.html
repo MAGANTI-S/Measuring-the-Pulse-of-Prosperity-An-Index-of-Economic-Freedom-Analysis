@@ -8,69 +8,74 @@
 <style>
 body {
     font-family: Arial, sans-serif;
-    background: #f4f7fb;
     margin: 0;
-    padding: 40px 15px;
-    color: #2d3436;
+    background-color: #f4f7fb;
+    color: #2c3e50;
 }
 
-/* Page container */
+/* Container */
 .container {
     max-width: 900px;
     margin: auto;
+    padding: 20px;
+}
+
+/* Title Header */
+.main-title {
+    text-align: center;
+    background: #0b66c3;
+    color: white;
+    padding: 25px 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
 }
 
 /* Section styles */
-.section-light {
-    background: #ffffff;
+.section {
     padding: 25px;
     border-radius: 10px;
     margin-bottom: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-.section-blue {
-    background: #e8f1ff;
-    padding: 25px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.section-green {
-    background: #e9f7ef;
-    padding: 25px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.section-yellow {
-    background: #fff9e6;
-    padding: 25px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
+.overview { background: #ffffff; }
+.about { background: #e8f1ff; }
+.tools { background: #e9f7ef; }
+.insights { background: #fff4e6; }
+.dashboard { background: #fff9e6; }
 
 h2 {
     margin-top: 0;
+    border-bottom: 2px solid rgba(0,0,0,0.08);
+    padding-bottom: 6px;
 }
 
 ul {
     line-height: 1.7;
 }
 
+a {
+    color: #0b66c3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Button */
 .dashboard-btn {
     display: inline-block;
-    background: #0984e3;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
     margin-top: 10px;
+    background-color: #0b66c3;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 .dashboard-btn:hover {
-    background: #0652DD;
+    background-color: #084c94;
 }
 </style>
 </head>
@@ -79,8 +84,14 @@ ul {
 
 <div class="container">
 
-    <!-- Project Overview -->
-    <div class="section-light">
+    <!-- MAIN TITLE -->
+    <div class="main-title">
+        <h1>Measuring the Pulse of Prosperity</h1>
+        <p>Economic Freedom Index Analysis</p>
+    </div>
+
+    <!-- PROJECT OVERVIEW -->
+    <div class="section overview">
         <h2>Project Overview</h2>
         <p>
             This project analyzes global economic freedom using indicators such as unemployment,
@@ -89,8 +100,19 @@ ul {
         </p>
     </div>
 
-    <!-- Tools Used -->
-    <div class="section-blue">
+    <!-- ABOUT -->
+    <div class="section about">
+        <h2>About the Project</h2>
+        <p>
+            Economic freedom plays a crucial role in determining national growth,
+            business environment, and overall quality of life. This project uses
+            data visualization techniques to examine how economic indicators
+            influence prosperity and development.
+        </p>
+    </div>
+
+    <!-- TOOLS USED -->
+    <div class="section tools">
         <h2>Tools Used</h2>
         <ul>
             <li>Tableau Public</li>
@@ -99,8 +121,8 @@ ul {
         </ul>
     </div>
 
-    <!-- Key Insights -->
-    <div class="section-green">
+    <!-- KEY INSIGHTS -->
+    <div class="section insights">
         <h2>Key Insights</h2>
         <ul>
             <li>Countries with low unemployment tend to have higher economic freedom scores.</li>
@@ -109,8 +131,8 @@ ul {
         </ul>
     </div>
 
-    <!-- Dashboard Link -->
-    <div class="section-yellow">
+    <!-- DASHBOARD LINK -->
+    <div class="section dashboard">
         <h2>Dashboard Link</h2>
         <p>Click below to explore the interactive Tableau dashboard:</p>
 
